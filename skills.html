@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Skills</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">portfolio</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+       <a href="myservices.html">Myservices</a>
+      <a href="skills.html" class="active">Skills</a>
+       <a href="projects.html">projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <!-- Technical Skills -->
+    <div class="container1">
+      <h1 class="heading1">Technical Skills</h1>
+      <div class="technical-bars">
+
+        <div class="bar">
+          <i class='bx bxl-html5' style='color:#E34F26; font-size:30px;'></i>
+          <div class="info"><span>HTML</span></div>
+          <div class="progress-line html"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <i class='bx bxl-css3' style='color:#1572B6; font-size:30px;'></i>
+          <div class="info"><span>CSS</span></div>
+          <div class="progress-line css"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <i class='bx bxl-javascript' style='color:#F7DF1E; font-size:30px;'></i>
+          <div class="info"><span>JavaScript</span></div>
+          <div class="progress-line javascript"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <i class='bx bxl-python' style='color:#3776AB; font-size:30px;'></i>
+          <div class="info"><span>Python</span></div>
+          <div class="progress-line python"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <i class='bx bxl-java' style='color:#007396; font-size:30px;'></i>
+          <div class="info"><span>Java</span></div>
+          <div class="progress-line java"><span></span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Professional Skills -->
+    <div class="container1">
+      <h1 class="heading1">Professional Skills</h1>
+      <div class="radial-grid">
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#d88bff"/>
+                <stop offset="100%" stop-color="#7f3cff"/>
+              </linearGradient>
+            </defs>
+            <circle class="bg" cx="100" cy="100" r="80" />
+            <circle class="progress" cx="100" cy="100" r="80" pathLength="100" style="--percent:60" stroke="url(#grad1)" />
+          </svg>
+          <div class="percentage">60%</div>
+          <div class="text">Creativity</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#d88bff"/>
+                <stop offset="100%" stop-color="#7f3cff"/>
+              </linearGradient>
+            </defs>
+            <circle class="bg" cx="100" cy="100" r="80" />
+            <circle class="progress" cx="100" cy="100" r="80" pathLength="100" style="--percent:80" stroke="url(#grad1)" />
+          </svg>
+          <div class="percentage">80%</div>
+          <div class="text">Communication</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#d88bff"/>
+                <stop offset="100%" stop-color="#7f3cff"/>
+              </linearGradient>
+            </defs>
+            <circle class="bg" cx="100" cy="100" r="80" />
+            <circle class="progress" cx="100" cy="100" r="80" pathLength="100" style="--percent:75" stroke="url(#grad1)" />
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">Problem Solving</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#d88bff"/>
+                <stop offset="100%" stop-color="#7f3cff"/>
+              </linearGradient>
+            </defs>
+            <circle class="bg" cx="100" cy="100" r="80" />
+            <circle class="progress" cx="100" cy="100" r="80" pathLength="100" style="--percent:70" stroke="url(#grad1)" />
+          </svg>
+          <div class="percentage">70%</div>
+          <div class="text">Teamwork</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Trigger radial animations on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const radialBars = document.querySelectorAll('.radial-bar');
+      radialBars.forEach(bar => bar.classList.add('active'));
+    });
+  </script>
+</body>
+</html>
